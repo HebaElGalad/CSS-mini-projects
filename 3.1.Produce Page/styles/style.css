@@ -1,0 +1,233 @@
+
+/* === DEFINE COUSTOM COLORS ===
+	YELLOW: #fdbe2e;
+	ORANGE: #f2994a;
+	BEGIE: #f7edcd;
+ =========================== */
+
+html {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	font-family: inherit;
+}
+
+body,
+ul,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ==== HEADER ==== */
+nav ul {
+  padding: 24px 120px;
+  background-color: #fdbe2e;
+}
+
+nav li + li,
+footer li + li {
+  margin-left: 32px;
+}
+
+nav li,
+footer li {
+  list-style: none;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+nav a,
+ul.float-right a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	padding: 0 16px;
+}
+
+nav a:hover,
+ul.float-right a:hover,
+main footer a:hover,
+button:hover {
+	text-decoration: underline;
+}
+
+/* ==== FOOTER ==== */
+body > footer {
+	padding: 24px 120px;
+	background-color: #f2994a;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+}
+
+body > footer,
+ul.float-right a {
+	color: #fff;
+	font-weight: bold;
+}
+
+/* ==== MAIN CONTENT ==== */
+div.clearfix {
+	margin: 0 120px;
+	display: flex;
+}
+
+main.float-left {
+	width: 70%;
+	margin: 32px 120px 0 0;
+}
+
+main header {
+	margin-bottom: 32px;
+	text-transform: uppercase;
+}
+
+main section + section {
+	margin: 64px auto 0px;
+}
+
+main section:last-child {
+	margin-bottom: 32px;
+}
+
+section li {
+	list-style: none;
+}
+
+main footer {
+	text-align: center;
+}
+
+main footer a {
+	display: inline-block;
+	text-decoration: none;
+	color: #f2994a;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.produce {
+	display: grid;
+	width: 100%;
+	height: 260px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	/*grid-gap: 16px;*/
+}
+
+div.items {
+	display: inline-block;
+	width: 100px;
+	margin-left: 24px;
+	font-size: 0.9rem;
+}
+
+div.items h2,
+ul.location h2 {
+	margin: 0;
+}
+
+.float-left p {
+	margin: 24px 0;
+}
+
+.location {
+	display: grid;
+	width: 100%;
+	/*height: 200px;*/
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 200px;
+}
+
+.location-detail {
+	display: inline-block;
+	width: 100px;
+}
+
+.location-map {
+	margin-left: 32px;
+}
+
+.location-map p {
+	padding-left: 32px;
+	margin-top: 8px;
+}
+
+.location-map a {
+	color: #000;
+}
+
+/* ==== FORM SECTION ==== */
+section.float-right {
+	width: 30%;
+	height: auto;
+	background-color: #f7edcd;
+	background-image: url(../images/Vegetables.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+fieldset {
+	display: inline-block;
+	width: 100%;
+	padding: 24px 32px 16px;
+	border: none;
+	margin: 200px 0px 0px;
+}
+
+label,
+legend {
+	font-weight: bold;
+}
+
+legend {
+	text-transform: uppercase;
+	font-size: 1.4rem;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	font-size: 1.2rem;
+	padding: 24px 0;
+	margin: 8px  auto 24px;
+	border: 2px solid #ddd;
+}
+
+button {
+	display: block;
+	width: 100%;
+	height: 50px;
+	font-weight: bold;
+	font-size: 1.4rem;
+	background-color:  #fdbe2e;
+	border: none;
+	padding: 8px;
+	margin-top: 24px;
+}
